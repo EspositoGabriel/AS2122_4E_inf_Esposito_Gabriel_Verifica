@@ -46,7 +46,7 @@ namespace AS2122_4E_inf_Esposito_Gabriel_Verifica
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(117, 302);
+            this.button1.Location = new System.Drawing.Point(74, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 31);
             this.button1.TabIndex = 0;

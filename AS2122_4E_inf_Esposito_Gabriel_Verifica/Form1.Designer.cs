@@ -61,7 +61,6 @@ namespace AS2122_4E_inf_Esposito_Gabriel_Verifica
             this.label1.Size = new System.Drawing.Size(44, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Codice";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

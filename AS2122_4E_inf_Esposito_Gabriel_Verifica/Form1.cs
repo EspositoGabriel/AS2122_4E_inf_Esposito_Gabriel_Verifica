@@ -12,20 +12,41 @@ namespace AS2122_4E_inf_Esposito_Gabriel_Verifica
 {
     public partial class Form1 : Form
     {
-        Dictionary<string,Articolo> articoli;
+        Dictionary<string, Articolo> articoli;
         public Form1()
         {
             InitializeComponent();
             articoli = new Dictionary<string, Articolo>();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-         if (articoli)
+            if (articoli.ContainsKey(txtCodice.Text))
+            {
+                articoli[txtCodice.Text] = new Articolo(txtCodice.Text, unitadimisura.Text, txtDescrizione.Text, txtPrezzo.Text);
+            }
+        else {
 
+                articoli.Add(txtCodice.Text, new Articolo(txtCodice.Text, unitadimisura.Text, txtDescrizione.Text, txtPrezzo.Text);
+        
+        }
 
+                    
+                    
+                    
+            }
+        private void btnVisualizza_Click(object sebnder ,EventArgs e)
+        {
 
-
+            int count = 0;
+        foreach(KeyValuePair<string, Articolo>a in articoli)
+            {
+                lstVisualizza.Items.Add(a.ToString());
+                lnlArticoliNumerati.Text =$ "Articolo  (count)";
+            }
+        
+        }
+                    
 
         }
     }

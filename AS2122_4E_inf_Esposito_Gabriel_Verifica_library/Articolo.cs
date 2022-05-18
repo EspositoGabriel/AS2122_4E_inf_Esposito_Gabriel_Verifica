@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AS2122_4E_inf_Esposito_Gabriel_Verifica_library
 {
-    public class Class1
+    public class Articolo
+
     {
         string  codice;
         string  descrizione;
